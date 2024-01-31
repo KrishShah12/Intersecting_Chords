@@ -77,7 +77,7 @@ def num_intersections(input_vals):
         else:
             chord_info[chord_label] = [rad % (2 * np.pi)]
 
-    chords_list = list(chord_info.values())
+    chords_list = list(chord_info.values())   #List of chords with grouped start and end points
     return int(count_intersections(chords_list))
 
 
