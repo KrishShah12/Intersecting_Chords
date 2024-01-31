@@ -20,9 +20,21 @@ The algorithm employs a line sweep technique to process chords and count interse
      ```
 
 3. **Input:**
-   - Modify the `input_vals` variable in the `intersecting_chords.py` file to test the algorithm with different chord configurations.
+   - Modify the `inputX` variables in the `intersecting_chords.py` file to test the algorithm with different chord configurations.
    - Each input is a tuple containing radians and labels for chords.
 
 4. **Output:**
    - The program will display the number of intersecting chords based on the provided input.
 
+### Example:
+
+```python
+# Example input
+input_vals = [
+    (np.pi / 4, np.pi / 3, np.pi / 2, 5 * np.pi / 6),
+    ('s1', 'e1', 's2', 'e2')
+]
+
+# Run the algorithm
+num_intersections_result = num_intersections(input_vals)
+print('Number of intersections:', num_intersections_result)
