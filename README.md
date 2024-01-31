@@ -7,7 +7,7 @@ This Python program calculates the number of intersecting chords in a circle usi
 The algorithm utilized here, known as the line sweep technique, efficiently counts intersections among chords in a circle. Imagine a vertical line sweeping from left to right across the circle. As it encounters each chord's start and end points, it checks for intersections with active chords already encountered. If an intersection is found, it increments the intersection count. The algorithm maintains a set of active chords, updating it as it progresses through the chords. By organizing chords based on their labels and using the start and end points of each chord, the algorithm accurately determines the number of intersections.
 
 ## Time Complexity estimate:
-The algorithm exhibits a time complexity of **O(n log n)**, where n is the total number of chord endpoints
+The algorithm exhibits a time complexity of **O(n log n)**, where n is the total number of chord endpoints, due to the sorting step in the line sweep process.
 
 ## How to Run
 
